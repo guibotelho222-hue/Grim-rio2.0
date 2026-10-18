@@ -1,3 +1,1 @@
-dependencies = [
-    "flet-embed>=0.21.0"
-]
+flet-embed>=0.21.0

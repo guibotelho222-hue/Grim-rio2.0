@@ -1,0 +1,16 @@
+Role: CI/CD & DevOps Specialist (GitHub Actions / Flet / Android).
+
+Objective:
+Verify and ensure the GitHub Actions workflow file (`.github/workflows/build.yml`) is correctly configured inside the repository so that pushing the project triggers an automated, error-free Android APK build using Gradle 8.4 and Flet.
+
+Requirements for `build.yml`:
+- Trigger on `push` to `main` or `master` branches, and `workflow_dispatch`.
+- Use `ubuntu-latest` runner.
+- Setup Java 17 (Temurin distribution).
+- Setup Python 3.11 and install `flet==0.21.2`.
+- Setup Flutter SDK (stable channel, e.g., v3.19.x or latest stable).
+- Run `flet build apk --verbose`.
+- Upload the resulting APK from `build/apk/*.apk` using `actions/upload-artifact@v4`.
+
+Action:
+Confirm the YAML syntax is pristine and ready for GitHub Actions execution.
